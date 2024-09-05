@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header-container">
+        <h1>Minha Loja</h1>
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+
+        <nav id="menu-nav">
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <nav id="nav-menu">
+            <button class="close-btn" id="close-btn">&times;</button>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+        <div class="cart-icon" id="cart">
+        
+            <div>
+            <p>Carrinho</p>
+            <img src="Imagens/carrinho.jpg" alt="Carrinho">
+            <span id="cart-count">0</span>
+            </div>
+        </div>
+        <section id="products">
+            <input type="text" id="search-bar" placeholder="Buscar produtos...">
+            <div class="filtro">
+            <h1>Filtro</h1>
+            <select id="rating-filter">
+                <option value="all">Todos</option>
+                <option value="3">3 Estrelas</option>
+                <option value="4">4 Estrelas</option>
+                <option value="5">5 Estrelas</option>
+            </select>
+            </div>
+        </section>
+        <div id="product-list"></div>
+    </main>
+
+    
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Seu Carrinho</h2>
+            <ul id="cart-items"></ul>
+            <p id="cart-total">Total: R$0.00</p>
+            <button id="whatsapp-button" class="whatsapp-button">Finalizar Compra via WhatsApp</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Minha Loja</h3>
+                <p>Sua melhor opção de compras online. Oferecemos uma variedade de produtos com qualidade garantida.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#products">Produtos</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Telefone: (84) 99600-2433</p>
+                <p>Email: contato@minhaloja.com.br</p>
+                <div class="social-icons">
+                    <a href="#"><img src="Imagens/telefone.png" alt="Facebook"></a>
+                    <a href="#"><img src="Imagens/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="Imagens/whatsapp.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Minha Loja. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
